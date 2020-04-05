@@ -1,8 +1,8 @@
 .u-section-1 .u-sheet-1 {min-height: 652px}
-.u-section-1 .u-custom-html-1 {min-height: 458px; width: 807px; height: auto; margin: 86px auto 60px} 
+.u-section-1 .u-custom-html-1 {min-height: 458px; width: 807px; margin: 86px auto 60px} 
 
 @media (max-width: 1199px){ .u-section-1 .u-sheet-1 {min-height: 599px}
-.u-section-1 .u-custom-html-1 {min-height: 455px; width: 800px} }
+.u-section-1 .u-custom-html-1 {min-height: 455px; height: auto; width: 800px} }
 
 @media (max-width: 991px){ .u-section-1 .u-sheet-1 {min-height: 438px}
 .u-section-1 .u-custom-html-1 {min-height: 410px; margin-bottom: 34px; margin-right: initial; margin-left: initial; width: auto} }
