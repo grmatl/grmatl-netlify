@@ -1,13 +1,11 @@
 #!/bin/bash 
 if [ "$1" != "" ]; then
+	echo $1
     echo "FB URL Provided. Executing script..."
-    # sed -i 's/\(videos/\)\(.*\)/\1$1/' sample.txt
+    fbid=$(echo $1 | sed 's~^.*videos/~~') # delete everything before videos/. output: /id/
+    echo $fbid
+	sed -i "s~videos.*/~videos/$fbid~" Live.html # replace videos/ with videos/id. output: fb video url
+    git add . && git commit -m "Update to GRM site" && git push origin master
 else
     echo "Please provide FB URL"
 fi
-
-# sed -nr '/videos// s/.*videos//${search}.*p'
-
-# sed -i 's~http://www.test.org/name~http://www.test.org/archive/name~g' user.html
-
-# sed -i 's/\(videos/\)\(.*\)/\1$1/' sample.txt
