@@ -7,5 +7,5 @@ if [ "$1" != "" ]; then
 	sed -i "s~videos.*/~videos/$fbid~" Live.html # replace videos/ with videos/id. output: fb video url
     git add . && git commit -m "Update to GRM site" && git push origin master
 else
-    echo "Please provide FB URL"
+    echo "Please provide the URL of the live FB video like so: ./live_script.sh url"
 fi
